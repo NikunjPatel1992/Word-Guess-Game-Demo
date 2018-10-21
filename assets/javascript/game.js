@@ -1,12 +1,12 @@
 var win = 0;
 var loss = 0;
-var word = ["nikunj", "patel", "bhumi", "roshni"]
+var word = ["tom", "jerry", "robert", "lee"]
 
 //var titleAudio = new Audio('assets/audio/main-title-short.mp3');
-var firstaudio = new Audio('/assets/song/first.mp3')
-var secondaudio = new Audio('/assets/song/second.mp3')
-var thirdaudio = new Audio('/assets/song/third.mp3')
-var forthaudio = new Audio('/assets/song/forth.mp3')
+var firstaudio = new Audio('assets/song/first.mp3')
+var secondaudio = new Audio('assets/song/second.mp3')
+var thirdaudio = new Audio('assets/song/third.mp3')
+var forthaudio = new Audio('assets/song/forth.mp3')
 
 
 var left = 10;
@@ -74,27 +74,27 @@ document.onkeyup = function (event) {
             var win1 = "<div style= color:white;> <h2> Win : " + win + "</h2></div>";
             document.querySelector("#wins").innerHTML = win1;
             switch (computerguess) {
-                case "nikunj":
-                    alert("Nikunj is hear");
+                case "tom":
+                    //alert("tom is hear");
                     var img = "<div> <img src='assets/image/first.jpg' style='height: 200; width: 200'></div>"
                     document.querySelector("#photo").innerHTML = img;
                     firstaudio.play();
                     break;
-                case "bhumi":
-                    alert("bhumi is hear");
+                case "jerry":
+                    //alert("jerry is hear");
                     var img = "<div> <img src='assets/image/second.png' style='height: 200; width: 200'></div>"
                     document.querySelector("#photo").innerHTML = img;
                     secondaudio.play();
                     break;
-                case "patel":
+                case "robert":
                     var img = "<div> <img src='assets/image/third.jpg' style='height: 200; width: 200'></div>"
-                    alert("patel is hear");
+                    //alert("robert is hear");
                     document.querySelector("#photo").innerHTML = img;
                     thirdaudio.play();
                     break;
-                case "roshni":
+                case "lee":
                     var img = "<div> <img src='assets/image/forth.jpg' style='height: 200; width: 200'></div>"
-                    alert("roshni is hear");
+                    //alert("lee is hear");
                     document.querySelector("#photo").innerHTML = img;
                     forthaudio.play();
                     break;

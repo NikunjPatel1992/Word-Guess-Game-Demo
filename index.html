@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--css file link-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <!--javascript file link-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="container" id="header">
+                <div class="text-center" style="color: white">
+                    <h1 style="font-size:5vw;">Hangman</h1>
+                </div>
+            </div>
+
+            <div class="container" style="margin-bottom: 100px; border: 4px dotted purple;">
+                <div class="text-center" style="border-bottom: 2px solid white; color: white;">
+                    <h2>Press any key to start the game</h2>
+                </div><br>
+                <div class="row text-center">
+                    <div class="col-12 col-md-6" style="border-right: 2px dotted purple; border-top: 2px dotted purple ">
+                        <div id="clue"></div>
+                        <div class="text-center" id="answerPhoto" style="color:white;">
+                            <h2 id="songname"></h2>
+                            <div id="photo">
+                                <img src="assets/image/game.jpg" style="height: 200; width: 200">
+                            </div>
+                        </div><br>
+                    </div>
+                    <div class="col-12 col-md-6" style="border-top: 2px dotted purple">
+                        <div id="wins" style="color:white;">
+                            <h2>Win = 0</h2>
+                        </div><br>
+                        <div id="answer" style="color:white;">
+                            <h2>Current Word :</h2>
+                        </div><br>
+                        <div id="remaining " style="color:white;">
+                            <h2>Number Of Guesses remaining : 10</h2>
+                        </div><br>
+                        <div id="guesses" style="color:white;">
+                            <h2>Latter allready Guess</h2>
+                        </div><br>
+                        <div id="latter" style="color:white;">
+                            <h2>__</h2>
+                        </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
